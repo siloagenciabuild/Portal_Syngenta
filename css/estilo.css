@@ -207,7 +207,7 @@
 }
 
 .botao-buscar button{
-	background-color: #6fad00;
+	background-color: #F0F0F0;
 	padding: 7px 50px;
 	border-radius: 30px;
 	border: none;
@@ -217,7 +217,7 @@
 }
 
 .botao-buscar button:hover{
-	background-color: #669e00;
+	background-color: #f0f0f0;
 }
 
 /* CONTEÚDO */
@@ -342,7 +342,6 @@
 .saiba-mais button:hover{
 	background-color: #669e00;
 }
-
 
 /*RESPONSIVEL*/
 
@@ -617,4 +616,45 @@
 	.area-profissional select{
 		width: 322px;
 	}
+}
+
+/*    INDEX 02     */
+
+.sec-02{
+	width: 1123px;
+	height: 720px;
+	margin: auto;
+}
+
+.sec-02 h1{
+	color: #7C828D;
+	font-family: arial;
+	font-weight:bold;
+	margin-top:20px;
+	margin-bottom: 8px;
+	font-size: 28px;
+	margin-left:30px;
+}
+
+.sec-02 p{
+	color: #7C828D;
+	font-family: arial;
+	font-size: 14px;
+	margin-left:30px;
+	margin-bottom: 20px;
+}
+
+.col-01{
+	width: 400px;
+	height: 550px;
+	background-color: #E5E5E5;
+}
+
+.cidade-regiao{
+	width: 330px;
+	padding: 30px 35px;
+}
+
+.cidade-regiao input{
+	width: 328px;
 }
