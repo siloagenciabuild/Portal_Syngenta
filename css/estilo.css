@@ -1,3 +1,7 @@
+.hide{
+	display: none;
+}
+
 *{
 	padding: 0;
 	margin:0;
@@ -55,7 +59,7 @@
 
 .sec-01{
 	width: 1123px;
-	height: 720px;
+	height: auto;
 	margin: auto;
 }
 
@@ -169,9 +173,11 @@
 	appearance:none;
 	background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #fff;
 	background-position: 290px center;
+	background-size: 35px;
 	width: 324px;
 	height:30px;
 	border:1px solid #000;
+	margin-top: 2px;
 }
 
 /*FORMULÁRIO BUSCA*/
@@ -235,14 +241,20 @@
 	height: 250px; 
 	margin:auto;
 }
-
+.imagem{
+	width: 400px;
+	padding: 30px 0px 30px 0px;
+}
 .conteudo-1 p{
 	margin: 0;
+}
+.descricao{
+	width: 400px;
+    height: auto;
 }
 
 .margem img{
 	width:300px; 
-	margin-top: 40px;
 }
 
 .conteudo-2{
@@ -254,8 +266,8 @@
 }
 
 .preco{
-	width: 520px;
-	height: 85px;
+	width: 490px;
+	height: auto;
 	margin: auto;
 	background-color: #f0f7e7;
 	margin-top: 20px;
@@ -274,6 +286,7 @@
 	color: #6b706c;
 	font-size:14px;
 	margin-left: 25px;
+	padding-bottom: 10px;
 }
 
 .conteudo-2 .margem-2{
@@ -289,14 +302,24 @@
 	text-transform: uppercase;
 }
 
-.conteudo-2 p{
-	margin-top: 4px;
-}
 
 .conteudo-2 h3{
 	padding-left: 30px;
 }
 
+.escolha-produto{
+	width: auto;
+	height: auto;
+}
+
+.descricao-produto{
+	width: auto;
+	height: auto;
+}
+
+.conteudo-2 p{
+	margin-top: 4px;
+}
 
 .saiba-mais{
 	width: 200px;
@@ -348,281 +371,310 @@
 @media only screen and (max-width: 1100px) {
 	.sec-01{
 		width: 100%;
+		margin: auto;
 	}
 
-	.container, .logo, .nav, .menu-culturas{
+	.container{
 		width: 100%;
 	}
 
-	.menu-culturas{
-		padding-left: 30px;
+	.logo{
+		width: 100%;
+	}
+
+	.nav{
+		width: 100%;
+		margin:auto;
 	}
 
 	.nav p{
-		margin-left: 35px;
+		margin-left: 20px;
 	}
 
-	.logo img{
-		margin-right: 35px;
-	}
-
-	.form {
-    	width: auto;
-    }
-
-    .form-2{
-    	width: auto;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
 	.menu-culturas{
-		padding-left: 30px;
-		width: auto!important;
-
+		width: 100%;
 	}
 
-	.form, .form-2{
-		width: 100%!important;
-	}
-
-	form .form-2{
-		width: 100%!important;
-	}
-
-	.nome {
-    	width: 640px;
-    	padding: 28px 10px 12px 20px;
-	}
-
-	.nome input {
-    	width: 640px;
-	}
-
-	.cpf{
-		width: 300px;
-		padding: 0px 6px 0px 20px;
-	}
-
-	.cpf input {
-    	width: 300px;
-    }
-
-    .email{
-    	padding:0px 6px 0px 30px;
-    }
-
-    .telefone {
-    	width: 300px;
-   		padding: 0px 6px 0px 20px;
-   	}
-
-   	.telefone input{
-    	width: 300px;
-   	}
-
-	.cidade {
-    	width: 300px;
-    	padding: 6px 6px 0px 30px;
-    }
-
-    .cidade input {
-    	width: 300px;
-    }
-
-	.estado {
-    	width: 300px;
-   		padding: 0px 6px 0px 20px;
-   	}
-
-   	.estado input {
-    	width: 300px;
-    }
-
-    .area-profissional {
-    	width: 300px;
-    	padding: 6px 6px 0px 30px;
-	}
-
-	.area-profissional input {
-    	width: 300px;
-    }
-
-    .form {
-    	height: 306px;
-    }
-
-    .produto {
-    	width: 401px!important;
-    	padding: 10px 118px 0px 20px;
-	}
-
-    .produto input {
-    	width: 480px!important;
-    }
-
-    .form-2{
-    	margin-bottom: 10px!important;
-    	width: 100%!important;
-    }
-
-    .conteudo-1 {
-    	position: relative!important;
-    	width: 100%!important
-    }
-
-    .conteudo-2 {
-    	width: 100%!important;
-    	margin-top: 10px;
-    }
-
-    .conteudo-2 h3{
-    	padding-left: 30px;
-    }
-
-    .preco{
-    	background-color:#e1efcc!important;
-    }
-
-
-}
-
-@media only screen and (max-width: 700px) {
-	.nome{
-		display: list-item;
-		list-style: none;
-		padding: 20px 0px 6px 35px!important;
-		width: 300px;
-	}
-
-	.nome input{
-		width: 100%!important;
-	}
-
-	.telefone input, .cidade input, .estado input{
-		width: 300px;
-	}
-
-	.cpf, .email, .telefone, .cidade, .estado, .area-profissional{
-		display: list-item;
-		list-style: none;
-		padding: 6px 0px 6px 35px;
+	.menu-culturas img{
+		margin-left: 20px;
 	}
 
 	.form{
-		height: 527px;
+		width: 100%;
+		height: auto;
+	}
+
+	.nome{
+		display: block;
+		width: auto;
+		padding:  20px 30px 10px 30px;
+
+	}
+
+	.nome input{
+		width: 97%;
+	}
+
+	.cpf{
+		width: 45%;
+		display: inline-block;
+		padding: 10px 10px 10px 30px;
+	}
+
+	.cpf input{
+		width: 95%;
+	}
+
+	.email{
+		width: 45%;
+		display: inline-block;
+		padding: 10px 30px 10px 17px;
+	}
+
+	.email input{
+		width: 95%;
+	}
+
+	.telefone{
+		width: 45%;
+		display: inline-block;
+		padding: 10px 10px 10px 30px;
+	}
+
+	.telefone input{
+		width: 95%;
+	}
+
+	.cidade{
+		width: 45%;
+		display: inline-block;
+		padding: 10px 30px 10px 17px;
+	}
+
+	.cidade input{
+		width: 95%;
+	}
+
+	.estado{
+		width: 45%;
+		display: inline-block;
+		padding: 10px 10px 10px 30px;
+	}
+
+	.estado input{
+		width: 95%;
+	}
+
+	.area-profissional{
+		width: 45%;
+		display: inline-block;
+		padding: 10px 30px 10px 17px;
+	}
+
+	.area-profissional select{
+		width: 100%;
+		background-position: 100% center;
+		height: 36px;
 	}
 
 	.form-2{
-		height: 125px!important;
-		margin-bottom: 10px!important;
+		width: 100%;
 	}
 
-	.produto{
-   		width: 45%!important;
-   		padding: 10px 118px 0px 35px;
+	.produto {
+		width: 73%;
+		padding: 10px 10px 10px 30px;
 	}
 
 	.produto input{
-    	width: 300px!important;
+		width: 100%;
+	}
+
+	.botao-buscar {
+    	padding-left: 3%;
+    }
+
+    .conteudo-1{
+    	position: relative;
+    	width: 100%;
+    }
+
+	.conteudo-2 {
+		width: 100%;
+		float: none;
+	}
+}
+
+@media only screen and (max-width: 930px) {
+	.nav p{
+		margin-left: 20px;
+	}
+
+	.menu-culturas img{
+		margin-left: 20px;
+	}
+
+	.form{
+		width: 100%;
+		height: auto;
+	}
+
+	.cpf {
+    	display: block;
+    	width: auto;
+    	padding: 10px 30px 10px 30px;
+   	}
+
+   	.cpf input{
+   		width: 97%;
+   	}
+
+   	.email{
+    	display: block;
+    	width: auto;
+    	padding: 10px 30px 10px 30px;
+   	}
+
+   	.email input{
+   		width: 97%;
+   	}
+
+   	.telefone {
+    	display: block;
+    	width: auto;
+    	padding: 10px 30px 10px 30px;
+   	}
+
+   	.telefone input{
+   		width: 97%;
+   	}
+
+   	.cidade {
+    	display: block;
+    	width: auto;
+    	padding: 10px 30px 10px 30px;
+   	}
+
+   	.cidade input{
+   		width: 97%;
+   	}
+
+   	.estado {
+    	display: block;
+    	width: auto;
+    	padding: 10px 30px 10px 30px;
+   	}
+
+   	.estado input{
+   		width: 97%;
+   	}
+
+   	.area-profissional {
+    	width: auto;
+    	display: block;
+    	padding: 10px 0px 10px 30px;
+	}
+
+	.area-profissional select{
+		width: 96%;
+		background-position: 100% center;
+		height: 36px;
+	}
+
+	.form-2{
+		width: 100%;
+		height: 120px;
+		margin-bottom: 10px;
+	}
+
+	.produto {
+    	display: block;
+		width: auto;
+		padding: 10px 30px 10px 30px;
+    }
+
+    .produto input{
+    	width: 97%;
     }
 
     .botao-buscar {
-    	float: left;
-		margin-right: 35px;
-		margin-top: 14px;
-		width: 325px;
-		margin-left: 34px;
-	}
-
-	.botao-buscar button {
-    	float: right;
-    }
-
-	.conteudo-1{
-		position: relative!important;
-		width: 100%!important;
-	}
-
-	.margem img {
-    	padding-right: 10%;
-    	padding-left: 10%;
-    }
-
-    .conteudo-1 p {
-    	padding-left: 10%;
-   		padding-right: 10%;
+    	padding-right: 3%;
+   		float: right;
    	}
 
-   	.conteudo-1 .margem {
-		width: 100%;
-	}
-
-	.conteudo-2{
-		width: 100%!important;
-		margin-top: 10px;
-		height: 40%;
-	}
-
-	.conteudo-2 h3{
-		width: 70%;
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-
-	.conteudo-2 p{
-		width: 70%;
-		padding-left: 10%;
-		padding-right: 10%;
-		margin: 0;
-	}
-
-	.conteudo-2 .margem-2{
-		width: 100%;
-	}
-
-	.preco{
-	    width: 290px;
-	    background-color: transparent!important;
-	    padding-left: 10%;
-	    padding-right: 10%;
-	    margin: 0;
-	}
-
-	.preco p, .preco h2{
-		margin: 0!important;
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.saiba-mais {
-    	width: 60%;
-    	float: left;
-    	margin-top: 20px;
-    	padding-left: 10%;
+   	.conteudo-1{
+   		width: 100%;
     }
 
-    .comprar-online {
-    	width: 59%;
-    	float: left;
-    	margin-top: 10px;
-    	padding-left: 10%;
-    }
+   	.conteudo-1 p{
+   		padding: 0px 30px 0px 30px;
+		width: 80%;
+   	}
 
-    .comprar-online button{
-    	float: left;
-    }
+   	.descricao{
+   		width: 100%;
+   	}
 
-	.area-profissional select{
-		width: 322px;
+   	.margem{
+   		width: 100%!important;
+   	}
+
+   	.imagem{
+   		width: 100%;
+   		margin: auto;
+   	}
+
+   	.margem img {
+    	width: 200px;
+    	padding: 0px 30px 0px 30px;
 	}
+
+   	.conteudo-2{
+   		width: 100%;
+   		height: auto;
+   	}
+
+   	.conteudo-2 .margem-2{
+   		width: 100%;
+   	}
+
+   	.preco{
+   		width: 100%;
+   		background-color: transparent!important;
+   		margin: auto;
+   	}
+
+   	.saiba-mais{
+   		margin-left: 30px;
+   		float: left;
+   		width: 90%;
+   	}
+
+   	.saiba-mais button{
+   		padding: 5px 30px;
+   	}
+
+   	.comprar-online {
+   		width: 194px;
+    	margin-top: 9px;
+    	float: left;
+    	margin-left: 14px;
+    	margin-bottom: 20px;
+	}
+
+	.comprar-online button{
+		padding: 5px 30px;
+	}
+   	
+
 }
+	
 
 /*    INDEX 02     */
 
 .sec-02{
 	width: 1123px;
-	height: 720px;
+	height: auto;
 	margin: auto;
 }
 
@@ -814,6 +866,10 @@
 		width: 100%;
 		height: 75%;
 		margin-top: 20px;
+	}
+
+	.col-02 h2{
+		padding-left: 29px;
 	}
 
 	.map img {
